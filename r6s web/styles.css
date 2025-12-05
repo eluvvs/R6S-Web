@@ -21,10 +21,25 @@ body {
 ul { padding-left: 20px; }
 .footer { margin: 28px 0 60px; color: #9aa7bf; font-size: 14px; }
 
+/* Two-column figure layout for Bomb page */
+.figure-row {
+  display: grid;
+  /* Slightly smaller left column so images don't dominate layout */
+  grid-template-columns: 300px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+.figure-row img { display: block; width: 100%; height: auto; }
+.figure-row figcaption { color: #d0d7e6; margin-top: 8px; }
+
 /* Drobná responzivita */
 @media (max-width: 520px) {
   .site-header h1 { font-size: 20px; }
   .content { padding: 0 12px; }
+}
+
+@media (max-width: 760px) {
+  .figure-row { grid-template-columns: 1fr; }
 }
 
 /* Background image with subtle blur + dark overlay for readability */
