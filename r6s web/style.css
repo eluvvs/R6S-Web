@@ -100,3 +100,7 @@ body::after {
 .operator-table tbody tr:last-child td {
   border-bottom: none;
 }
+
+.pricing {
+  padding: 150px;
+}
